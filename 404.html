@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — LOOM</title>
+    <style>
+        :root {
+            --bg-color: #2d3e1d;
+            --text-color: #ffffff;
+            --accent-green: #7fa655;
+            --glass-bg: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-blur: blur(12px);
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 50% 50%, rgba(127,166,85,0.15) 0%, transparent 80%);
+        }
+        main {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 110px;
+            font-weight: 300;
+            margin: 0;
+            color: #e2f0d9;
+            letter-spacing: 4px;
+            line-height: 1;
+        }
+        .error-title {
+            font-size: 32px;
+            font-weight: 400;
+            margin: 15px 0;
+            color: #ffffff;
+        }
+        .error-message {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 12px 28px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-home:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        footer {
+            background-color: #1a2612;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .footer-logo {
+            width: 70px;
+            height: 70px;
+            opacity: 0.9;
+        }
+        .footer-info {
+            line-height: 1.8;
+            font-size: 14px;
+        }
+        .footer-info a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        .footer-info a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="error-code">404</div>
+        <div class="error-title">Ошибочка</div>
+        <div class="error-message">Страница пока в разработке, возвращайтесь позже!</div>
+        <a href="index.html" class="btn-home">На главную</a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <svg class="footer-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="250" cy="250" r="230" fill="none" stroke="white" stroke-width="20"/>
+                <polygon points="250,60 70,410 430,410" fill="none" stroke="white" stroke-width="20" stroke-linejoin="round"/>
+                <line x1="65" y1="355" x2="435" y2="355" stroke="white" stroke-width="20"/>
+                <line x1="170" y1="200" x2="310" y2="340" stroke="white" stroke-width="20"/>
+                <line x1="330" y1="200" x2="190" y2="340" stroke="white" stroke-width="20"/>
+            </svg>
+            <div class="footer-info">
+                <div><a href="tel:+79299880138">+7(929)988-01-38</a></div>
+                <div><a href="mailto:marina.zlatovlasova.08@inbox.ru">marina.zlatovlasova.08@inbox.ru</a></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
