@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-плакат «Лонгрид» — LOOM</title>
+  <meta name="description"
+    content="Лесные художественные отели — интерактивный веб-плакат: погружение в атмосферу эко-отелей и арт-резиденций, спрятанных в лесу.">
+  <link rel="stylesheet" href="css/styles.css?v=69">
+  <link rel="icon" href="assets/footer-logo.png" type="image/png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="location.html">Локация</a></li>
+          <li><a href="index.html#rooms">Каталог номеров</a></li>
+          <li><a href="webposter.html" class="is-active">Веб-плакат</a></li>
+          <li><a href="zine.html">Журнал</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="masterclass.html">Мастеркласс 2025</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="index.html" class="logo">LOOM</a>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero hero--center">
+    <img class="hero__bg" src="assets/webposter-hero.png" alt="Лонгрид — интерактивный веб-плакат">
+    <div class="hero__content">
+      <h1 class="hero__title">ЛОНГРИД</h1>
+      <p class="hero__subtitle">интерактивный веб-плакат</p>
+    </div>
+  </section>
+
+  <section class="wp-intro">
+    <img class="section-leaf section-leaf--right" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="wp-intro__plate">
+        <p class="wp-text">Лесные художественные отели — это интерактивный веб-плакат, который полностью погружает
+          зрителя в атмосферу уникальных эко-отелей и арт-резиденций, спрятанных глубоко в лесу. Проект сочетает яркий
+          современный дизайн, плавные анимации, нежные иллюстрации и множество интерактивных элементов. Здесь каждое
+          окно-домик открывает свою историю, а вся композиция работает как единое пространство.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wp-content">
+    <img class="section-leaf section-leaf--left" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="wp-gallery">
+        <figure class="wp-gallery__stage">
+          <img id="wpImg" src="assets/webposter/01.png" alt="Окно-домик — история отеля" draggable="false">
+        </figure>
+        <div class="wp-gallery__nav">
+          <button class="wp-gallery__btn" data-dir="-1" aria-label="Предыдущее окно">↑</button>
+          <button class="wp-gallery__btn" data-dir="1" aria-label="Следующее окно">↓</button>
+        </div>
+      </div>
+      <a href="https://viktoria888739.github.io/project_art/" target="_blank" rel="noopener" class="btn wp-btn">Перейти
+        на сайт <span class="btn__arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer__logo"><img src="assets/footer-logo.png" alt="LOOM"></a>
+      <div class="footer__contacts">
+        <a href="tel:+79299880138" class="footer__contact">+7 (929) 988-01-38</a>
+        <a href="mailto:marina.zlatovlasova.08@inbox.ru" class="footer__contact">marina.zlatovlasova.08@inbox.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

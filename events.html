@@ -1,144 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мероприятия — LOOM</title>
-    <style>
-        :root {
-            --bg-color: #2d3e1d;
-            --text-color: #ffffff;
-            --accent-green: #7fa655;
-            --glass-bg: rgba(255, 255, 255, 0.07);
-            --glass-border: rgba(255, 255, 255, 0.15);
-            --glass-blur: blur(12px);
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-image: radial-gradient(circle at 50% 50%, rgba(127,166,85,0.15) 0%, transparent 80%);
-        }
-        header {
-            background-color: rgba(45, 62, 29, 0.9);
-            backdrop-filter: blur(5px);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            padding: 15px 20px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        nav a {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s, border-bottom 0.3s;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-        }
-        nav a:hover, nav a.active {
-            color: #fff;
-            border-bottom: 2px solid var(--accent-green);
-        }
-        main {
-            flex: 1;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            margin-bottom: 20px;
-        }
-        .hero h1 {
-            font-size: 54px;
-            font-weight: 300;
-            letter-spacing: 6px;
-            margin: 0 0 10px 0;
-            color: #e2f0d9;
-        }
-        .glass-card {
-            background: var(--glass-bg);
-            backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        footer {
-            background-color: #1a2612;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            margin-top: 60px;
-        }
-        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 20px; }
-        .footer-logo { width: 70px; height: 70px; }
-        .footer-info { line-height: 1.8; font-size: 14px; }
-        .footer-info a { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>События — LOOM</title>
+  <meta name="description"
+    content="События арт&эко отеля LOOM: ночной кинотеатр под звёздами, винные и сырные дегустации от местных фермеров, тактильные лаборатории.">
+  <link rel="stylesheet" href="css/styles.css?v=58">
+  <link rel="icon" href="assets/footer-logo.png" type="image/png">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О нас</a>
-            <a href="journal.html">Журнал</a>
-            <a href="location.html">Локация</a>
-            <a href="events.html" class="active">Мероприятия</a>
-            <a href="masterclass.html">Мастеркласс 2025</a>
-            <a href="poster.html">Веб-плакат</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="location.html">Локация</a></li>
+          <li><a href="index.html#rooms">Каталог номеров</a></li>
+          <li><a href="webposter.html">Веб-плакат</a></li>
+          <li><a href="zine.html">Журнал</a></li>
+          <li><a href="events.html" class="is-active">События</a></li>
+          <li><a href="masterclass.html">Мастеркласс 2025</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="index.html" class="logo">LOOM</a>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h1>МЕРОПРИЯТИЯ</h1>
-        </section>
+  <section class="hero">
+    <img class="hero__bg" src="assets/events-hero.png" alt="События нашего экоотеля">
+    <div class="hero__bushes hero__bushes--events" aria-hidden="true"></div>
+    <div class="hero__content sr-only">
+      <h1 class="hero__title">СОБЫТИЯ</h1>
+      <p class="hero__subtitle">нашего экоотеля</p>
+    </div>
+  </section>
 
-        <section class="glass-card">
-            <h2 style="font-weight:300;">Календарь событий отеля</h2>
-            <p style="opacity:0.7; font-size:15px; margin-top:15px;">Ближайшие лекции, акустические вечера у костра и практики молчания обновляются. Возвращайтесь позже.</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <svg class="footer-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="250" cy="250" r="230" fill="none" stroke="white" stroke-width="20"/>
-                <polygon points="250,60 70,410 430,410" fill="none" stroke="white" stroke-width="20" stroke-linejoin="round"/>
-                <line x1="65" y1="355" x2="435" y2="355" stroke="white" stroke-width="20"/>
-                <line x1="170" y1="200" x2="310" y2="340" stroke="white" stroke-width="20"/>
-                <line x1="330" y1="200" x2="190" y2="340" stroke="white" stroke-width="20"/>
-            </svg>
-            <div class="footer-info">
-                <div><a href="tel:+79299880138">+7(929)988-01-38</a></div>
-                <div><a href="mailto:marina.zlatovlasova.08@inbox.ru">marina.zlatovlasova.08@inbox.ru</a></div>
-            </div>
+  <section class="loc-block loc-block--lead">
+    <img class="section-leaf section-leaf--right" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="ev-card ev-card--right" style="background-image:url('assets/ev-bg-1.png')">
+        <div class="ev-card__text">
+          <h2 class="loc-title">Ночной кинотеатр под звёздами. Экран, растворённый в темноте.</h2>
+          <p class="ev-text">Мы не обещаем спецэффектов — их уже создало ночное небо. Киновечер в LOOM — это не про
+            попкорн и шумные залы. Это про то, как луч проектора рассекает лесной туман, а звук фильма смешивается с
+            шумом ветра в кронах деревьев.</p>
         </div>
-    </footer>
+        <figure class="ev-card__poster">
+          <img src="assets/ev-poster-1.png" alt="Постер LOOM: «Входишь в лес — становишься лесом»">
+        </figure>
+      </div>
+    </div>
+  </section>
 
+  <section class="loc-block">
+    <img class="section-leaf section-leaf--left" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="ev-card ev-card--left" style="background-image:url('assets/ev-bg-2.png')">
+        <figure class="ev-card__poster">
+          <img src="assets/ev-poster-2.png" alt="Постер LOOM: «Связаны одной судьбой»">
+        </figure>
+        <div class="ev-card__text">
+          <h2 class="loc-title">Винные и сырные дегустации от местных фермеров:</h2>
+          <p class="ev-text">Поддержка локальных брендов для нас — это не дань трендам, а способ познакомить вас с
+            подлинным характером этих мест. За каждым продуктом на столе LOOM стоит человек, который знает здешнюю
+            почву, ветра и традиции. Мы приглашаем вас на камерные вечера-встречи. Здесь вы не просто дегустируете сыры
+            или редкие вина в красивой авторской подаче — вы узнаёте историю их создания из первых уст.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="loc-block">
+    <img class="section-leaf section-leaf--right" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="ev-card ev-card--right" style="background-image:url('assets/ev-bg-3.png')">
+        <div class="ev-card__text">
+          <h2 class="loc-title">Тактильные лаборатории</h2>
+          <p class="ev-text">Память земли: лепка из местной глины — процесс заземления, создание посуды и интерьерных
+            объектов. Свет и тепло: свечи из натурального соевого и пчелиного воска. Мы интегрируем в структуру свечи
+            сухие травы и мох, превращая её в хрупкий природный артефакт, который дома напомнит вам о тишине LOOM.</p>
+        </div>
+        <figure class="ev-card__poster">
+          <img src="assets/ev-poster-3.png" alt="Постер LOOM: «Мы связаны одной судьбой»">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer__logo"><img src="assets/footer-logo.png" alt="LOOM"></a>
+      <div class="footer__contacts">
+        <a href="tel:+79299880138" class="footer__contact">+7 (929) 988-01-38</a>
+        <a href="mailto:marina.zlatovlasova.08@inbox.ru" class="footer__contact">marina.zlatovlasova.08@inbox.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

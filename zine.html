@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зин «Исследование тишины» — LOOM</title>
+  <meta name="description"
+    content="Зин-исследование «Исследование тишины» — визуальное путешествие по необычным концепциям отелей, переосмысляющих связь человека с природой.">
+  <link rel="stylesheet" href="css/styles.css?v=50">
+  <link rel="icon" href="assets/footer-logo.png" type="image/png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="location.html">Локация</a></li>
+          <li><a href="index.html#rooms">Каталог номеров</a></li>
+          <li><a href="webposter.html">Веб-плакат</a></li>
+          <li><a href="zine.html" class="is-active">Журнал</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="masterclass.html">Мастеркласс 2025</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="index.html" class="logo">LOOM</a>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="hero__bg" src="assets/zine-hero.png" alt="Зин — Исследование тишины">
+    <div class="hero__content sr-only">
+      <h1 class="hero__title">ЗИН</h1>
+      <p class="hero__subtitle">Исследование тишины</p>
+    </div>
+  </section>
+
+  <section class="zine-intro">
+    <img class="section-leaf section-leaf--right" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="zine-intro__plate">
+        <p class="zine-intro__text">Зин-исследование «Исследование тишины» — это визуальное путешествие по самым
+          необычным концепциям отелей, которые переосмысляют связь человека с природой. На этих страницах мы исследуем,
+          как архитектура и загородный отдых могут стать терапией: от тесного взаимодействия с животными на подмосковной
+          арт-ферме до погружения вглубь каньона в футуристичном подземном отеле. Это манифест поиска покоя, скрытого от
+          городского шума.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="zine-spreads">
+    <img class="section-leaf section-leaf--left" src="assets/leaf-crown.png" alt="" aria-hidden="true">
+    <div class="container">
+      <div class="zine-board">
+        <button class="zine-flip__edge zine-flip__edge--prev" data-dir="-1" aria-label="Предыдущий разворот"></button>
+        <div class="zine-spread2">
+          <img class="zine-spread2__page" id="zinePageL" src="assets/zine/01.png" alt="Левая страница разворота"
+            draggable="false">
+          <img class="zine-spread2__page" id="zinePageR" src="assets/zine/02.png" alt="Правая страница разворота"
+            draggable="false">
+        </div>
+        <button class="zine-flip__edge zine-flip__edge--next" data-dir="1" aria-label="Следующий разворот"></button>
+      </div>
+      <div class="zine-nav">
+        <button class="zine-nav__btn" data-dir="-1" aria-label="Предыдущий разворот">←</button>
+        <span class="zine-nav__counter" id="zineCounter">1&nbsp;/&nbsp;10</span>
+        <button class="zine-nav__btn" data-dir="1" aria-label="Следующий разворот">→</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer__logo"><img src="assets/footer-logo.png" alt="LOOM"></a>
+      <div class="footer__contacts">
+        <a href="tel:+79299880138" class="footer__contact">+7 (929) 988-01-38</a>
+        <a href="mailto:marina.zlatovlasova.08@inbox.ru" class="footer__contact">marina.zlatovlasova.08@inbox.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
